@@ -3,6 +3,9 @@ import os
 import requests
 from bs4 import BeautifulSoup
 from discord_webhook import DiscordWebhook
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def get_price(product):
