@@ -45,7 +45,7 @@ if __name__ == "__main__":
                 else:
                     webhook = DiscordWebhook(
                         url=WEBHOOK_URL,
-                        content=f"New Steam market Listing for {listing['name']} - **{listing['price']}**",
+                        content=f"New Steam market Listing for {listing['name']} - **{listing['price']}** [link]({item})",
                     )
                     response = webhook.execute()
                     f.write(listing["id"] + "\n")
